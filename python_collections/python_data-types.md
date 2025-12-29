@@ -1,11 +1,11 @@
 #Built-in Data Types
 
-Text Type: str
-Numeric Types: int, float
-Sequence Types: list, tuple
-Mapping Type: dict
-Set Types: set
-Boolean Type: bool
+* Text Type: str
+* Numeric Types: int, float
+* Sequence Types: list, tuple
+* Mapping Type: dict
+* Set Types: set
+* Boolean Type: bool
 
 
 #Example 							Data Type
