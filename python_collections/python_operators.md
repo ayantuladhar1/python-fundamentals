@@ -1,6 +1,7 @@
 #In the example below, we use the + operator to add together two values:  
+```python
 print(10 + 5)  
-
+```
 |Python | Arithmetic | Operators |
 |-------|------------|-----------|
 |+ | Addition |	x + y|
@@ -46,10 +47,11 @@ Comparison operators are used to compare two values:
   
   
 #Some Examples  
+```python
 x = 5  
 y = 3   
 print(x == y)  
-  
+```
   
 #Python Logical Operators  
 Logical operators are used to combine conditional statements:  
@@ -62,9 +64,10 @@ Logical operators are used to combine conditional statements:
   
   
 #Some Examples  
+```python
 x = 5  
 print(x > 3 and x < 10)  
-  
+```
   
 #Python Identity Operators  
 Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:  
@@ -76,17 +79,19 @@ Identity operators are used to compare the objects, not if they are equal, but i
   
   
 #Some Examples  
+```python
 x = ["apple", "banana"]  
 y = ["apple", "banana"]  
 z = x  
 print(x is z)  
-  
+```
+
 #Returns True because z is the same object as x  
-  
+```python
 print(x is y)  
-  
+```
 #Returns False because x is not the same object as y, even if they have the same content  
-  
+```python
 print(x == y)  
   
 x = ["apple", "banana"]  
@@ -94,7 +99,7 @@ y = ["apple", "banana"]
 z = x  
   
 print(x is not z)  
-  
+  ```
 #Returns False because z is the same object as x  
   
 print(x is not y)  
