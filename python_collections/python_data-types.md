@@ -20,14 +20,13 @@
 |x = {"apple", "banana", "cherry"} | set |
 |x = True |	bool |
 
-
-#Multiline Strings
-a = """Lorem ipsum dolor sit amet,  
-consectetur adipiscing elit,  
-sed do eiusmod tempor incididunt  
-ut labore et dolore magna aliqua."""
-
-print(a)
++----------------------------------+
+|#Multiline Strings|
+|a = """Lorem ipsum dolor sit amet,|  
+|consectetur adipiscing elit,|
+|sed do eiusmod tempor incididunt|
+|ut labore et dolore magna aliqua."""|
+|print(a)|
 
 a = '''Lorem ipsum dolor sit amet,  
 consectetur adipiscing elit,  
