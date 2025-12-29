@@ -34,8 +34,9 @@ Assignment operators are used to assign values to variables:
   
 #Python Comparison Operators  
 Comparison operators are used to compare two values:  
-
-#Operator 	Name 						Example
+  
+|Operator | Name 			|			Example|
+|---------|-----------|------------|
 ==			Equal						x == y
 !=			Not equal					x != y
 >			Greater than				x > y
