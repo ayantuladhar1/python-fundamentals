@@ -110,7 +110,7 @@ b = "World"
 c = a + b  
 ```
 
-#To add a space between them, add a " ":  
+#To add a space between them, add " ":  
 ```python
 a = "Hello"  
 b = "World"  
@@ -119,51 +119,58 @@ print(c)
 ```
 
 #we cannot combine strings and numbers like this:  
+```python
 age = 36  
 txt = "My name is John, I am " + age  
 print(txt)  
-
+```
 
 #But we can combine strings and numbers by using the format() method!  
 The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are:  
 Use the format() method to insert numbers into strings:  
+```python
 age = 36  
 txt = "My name is John, and I am {}"  
 print(txt.format(age))  
-
+```
 
 #The format() method takes unlimited number of arguments, and are placed into the respective placeholders:  
+```python
 quantity = 3  
 itemno = 567  
 price = 49.95  
 myorder = "I want {} pieces of item {} for {} dollars."  
 print(myorder.format(quantity, itemno, price))  
-
+```
 
 #You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:  
+```python
 quantity = 3  
 itemno = 567    
 price = 49.95  
 myorder = "I want to pay {2} dollars for {0} pieces of item {1}."  
 print(myorder.format(quantity, itemno, price))  
-
+```
 
 #Boolean Values  
 In programming you often need to know if an expression is True or False.  
 You can evaluate any expression in Python, and get one of two answers, True or False.  
 When you compare two values, the expression is evaluated and Python returns the Boolean answer:  
+```python
 print(10 > 9)  
 print(10 == 9)  
 print(10 < 9)  
-
+```
 
 #Print a message based on whether the condition is True or False:  
+```python
 a = 200  
 b = 33  
 if b > a:  
   print("b is greater than a")   
 else:  
   print("b is not greater than a")  
+```
 
 #Most Values are True  
 Almost any value is evaluated to True if it has some sort of content.  
@@ -171,59 +178,67 @@ Any string is True, except empty strings.
 Any number is True, except 0.  
 Any list, tuple, set, and dictionary are True, except empty ones.  
 The following will return True:  
+```python
 bool("abc")  
 bool(123)  
 bool(["apple", "cherry", "banana"])  
-
+```
 
 #Some Values are False  
 In fact, there are not many values that evaluate to False, except empty values, such as (), [], {}, "", the number 0, and the value None. And of course the value False evaluates to False.  
 The following will return False:  
+```python
 bool(False)  
 bool(None)  
 bool(0)  
 bool("")  
 bool(())  
 bool([])  
-
+```
 
 #Numbers  
+```python
 x = 1    # int  
 y = 2.8  # float  
-
+```
 
 #Int  
 Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.  
+```python
 x = 1  
 y = 35656222554887711  
 z = -3255522  
 print(type(x))  
 print(type(y))  
 print(type(z))  
-
+```
 
 #Float  
 Float, or "floating point number" is a number, positive or negative, containing one or more decimals.  
+```python
 x = 1.10  
 y = 1.0  
 z = -35.59  
 print(type(x))  
 print(type(y))  
 print(type(z))  
-
+```
 
 #Type Conversion  
 You can convert from one type to another with the int(), float()  
 Convert from one type to another:  
+```python
 x = 1    # int  
 y = 2.8  # float  
-
+```
 
 #convert from int to float:  
+```python
 a = float(x)  
-
+```
 
 #convert from float to int:  
+```python
 b = int(y)  
   
 print(a)  
@@ -231,9 +246,11 @@ print(b)
  
 print(type(a))  
 print(type(b))  
-
+```
 
 #Random Number  
 Import the random module, and display a random number between 1 and 9:  
-import random  
+import random
+```python
 print(random.randrange(1, 10))  
+```
