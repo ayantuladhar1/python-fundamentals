@@ -100,11 +100,11 @@ z = x
   
 print(x is not z)  
   ```
-# Returns False because z is the same object as x  
+* Returns False because z is the same object as x  
 ```python
 print(x is not y)  
  ``` 
-# Returns True because x is not the same object as y, even if they have the same content  
+* Returns True because x is not the same object as y, even if they have the same content  
   ```python
 print(x != y)  
   ```
