@@ -1,3 +1,22 @@
+```python
+#Multiline Strings
+a = """Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+```
+<img width="368" height="98" alt="image" src="https://github.com/user-attachments/assets/0508fb53-5bcf-4e52-af66-7bc7a9463b84" />
+
+```python
+a = '''Lorem ipsum dolor sit amet,  
+consectetur adipiscing elit,  
+sed do eiusmod tempor incididunt  
+ut labore et dolore magna aliqua.'''  
+print(a)
+```
+<img width="360" height="87" alt="image" src="https://github.com/user-attachments/assets/f49ee111-99d1-429b-91bb-46621478e185" />
+
 # The upper() method returns the string in upper case:  
 ```python
 a = "Hello, World!"  
