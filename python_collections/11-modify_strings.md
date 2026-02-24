@@ -32,3 +32,23 @@ a = "Hello, World!"
 print(a.split(",")) # returns ['Hello', ' World!']  
 ```
 <img width="219" height="31" alt="image" src="https://github.com/user-attachments/assets/a4a2f9bd-8d5c-405c-b3b8-e75efc0622d9" />
+
+## The format() method takes unlimited number of arguments, and are placed into the respective placeholders:  
+```python
+quantity = 3  
+itemno = 567  
+price = 49.95  
+myorder = "I want {} pieces of item {} for {} dollars."  
+print(myorder.format(quantity, itemno, price))  
+```
+<img width="500" height="38" alt="image" src="https://github.com/user-attachments/assets/a6cffb74-117c-439a-be32-0a17ec777854" />
+
+## You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:  
+```python
+quantity = 3  
+itemno = 567    
+price = 49.95  
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."  
+print(myorder.format(quantity, itemno, price))  
+```
+<img width="571" height="34" alt="image" src="https://github.com/user-attachments/assets/034c0059-f44c-4a19-904b-a42f81e7e5d6" />
