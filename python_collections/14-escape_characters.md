@@ -11,14 +11,4 @@ To fix this problem, use the escape character \":
 <img width="651" height="69" alt="image" src="https://github.com/user-attachments/assets/42ecc585-3418-4b69-af8c-1ac689b4d185" />
 
 ## Other Escape Characters used in Python
-|Code|Result|
-|----|------|
-|\'| Single Quote|
-|\\| Backlash|
-|\n| New Line|
-|\r| Carriage Return|
-|\t| Tab|
-|\b| Backspace|
-|\f| Form Feed|
-|\ooo| Octal Value|
-|\xhh| Hex Value|
+<img width="951" height="884" alt="image" src="https://github.com/user-attachments/assets/cc131c3d-1439-48c5-b15e-b68d80259d0d" />
