@@ -43,3 +43,11 @@ bool("")
 bool(())  
 bool([])  
 ```
+## Evaluate Values and Variables
+The bool() function allows you to evaluate any value, and give you True or False in return.
+
+<img width="960" height="603" alt="image" src="https://github.com/user-attachments/assets/c952760a-30da-41c5-a413-bfd0c63fc57e" />
+<img width="852" height="123" alt="image" src="https://github.com/user-attachments/assets/8491346b-756b-467c-a950-e2d42d1ea150" />
+<img width="941" height="445" alt="image" src="https://github.com/user-attachments/assets/b3de6c26-b228-466c-a70d-9c8afaed61d9" />
+<img width="856" height="166" alt="image" src="https://github.com/user-attachments/assets/55c522c5-3bba-47db-9f5d-84fd53cb0c12" />
+
