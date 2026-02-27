@@ -33,3 +33,39 @@ thislist = ["apple", "banana', "cherrry", "apple", "cherry"]
 print(thislist)
 ```
 <img width="433" height="49" alt="image" src="https://github.com/user-attachments/assets/ed36417e-5079-4edb-ad1a-4adc7c6cd792" />
+
+## List Length
+To determine how many items a list has, use the len() function.
+
+## Example:
+List allows duplicate values:
+```python
+thislist = ["apple", "banana', "cherrry"]
+print(len(thislist))
+```
+
+## List Items - Data Types
+List items can be of any data type:
+
+## Example:
+```pyhton
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, True]
+print(list1)
+print(list2)
+print(list3)
+```
+<img width="264" height="89" alt="image" src="https://github.com/user-attachments/assets/4f8153e6-8255-422f-84e1-26e112deb5a5" />
+
+A list can contain different types:
+
+## Example:
+
+A list with strings, integeres and boolean values:
+```python
+list1 = ["abc", 34, True, 40, "male"]
+print(list1)
+```
+<img width="266" height="34" alt="image" src="https://github.com/user-attachments/assets/b3842ded-d590-47dd-ae18-4bc35232b0e2" />
+
