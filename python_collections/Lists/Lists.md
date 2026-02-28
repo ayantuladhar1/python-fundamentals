@@ -61,7 +61,6 @@ print(list3)
 A list can contain different types:
 
 ## Example:
-
 A list with strings, integeres and boolean values:
 ```python
 list1 = ["abc", 34, True, 40, "male"]
@@ -69,3 +68,34 @@ print(list1)
 ```
 <img width="266" height="34" alt="image" src="https://github.com/user-attachments/assets/b3842ded-d590-47dd-ae18-4bc35232b0e2" />
 
+## type()
+From Python's perspective, lists are defined as objects with the data type 'list':
+```python
+<class 'list'>
+```
+
+## Example:
+What is the data type of a list
+```python
+mylits = ["apple", "banana", "cherry"]
+print(type(mylist))
+```
+<img width="137" height="33" alt="image" src="https://github.com/user-attachments/assets/d6689374-b419-4b28-847f-8d9115d4939b" />
+
+## The list() Constructor
+It is also possible to use list() constructor when creating a new list.
+
+## Example:
+Uisng the list() constructor when creating a new list.
+```python
+thislist = list(("apple", "banana", "cherry")) # note the double round brackets.
+print(thislist)
+```
+<img width="264" height="33" alt="image" src="https://github.com/user-attachments/assets/7bd848c5-a871-453b-af2e-0ab295aa3d00" />
+
+# Python Collection (Arrays)
+There are four collection data types in the Python programming language:
+* List is a collection which is ordered and changeable. Allows duplicate members.
+* Tuple is a collection which is ordered and unchangeable. Allow duplicate members.
+* Set is a collection which is unordered, unchangeable and unindexed. No duplicate members.
+* Dictionary is a collection which is ordered and changeable. No duplicate members.
