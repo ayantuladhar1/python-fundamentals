@@ -29,4 +29,4 @@ Being immutable means you cannot add or remove elements. However, frozensets sup
 |issubset()| <= / < | Returns True if this frozenset is a (proper) subset of another|
 |issuperset()| >= / > | Returns True if this frozenset is a (proper) superset of another|
 |symmetric_difference()| ^ | Returns a new frozenset with the symmetric differences|
-|union() | | | Retuns a new frozenset containing the union|
+|union() | type | Retuns a new frozenset containing the union|
