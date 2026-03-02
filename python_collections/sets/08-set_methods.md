@@ -10,3 +10,14 @@ Python has a set of built-in methods that you can use on sets.
 |discard()| | Remove the specific item|
 |intersection()| & | Returns a set, that is the intersection of two other sets|
 |intersection_update()| &= | Removes the items in this set that are not present in other, specified sets|
+|isdisjoint()|	 	|Returns whether two sets have a intersection or not|
+|issubset()|	<=|	Returns True if all items of this set is present in another set|
+|issubset() |	<|	Returns True if all items of this set is present in another, larger set|
+|issuperset()|	>=|	Returns True if all items of another set is present in this set|
+|issuperset()| 	> |	Returns True if all items of another, smaller set is present in this set|
+|pop()|	| 	Removes an element from the set|
+|remove()|	| Removes the specified element|
+|symmetric_difference()| ^ | Returns a set with the symmetric differences of two sets|
+|symmetric_difference_update()|	^= | Inserts the symmetric differences from this set and another|
+|union()|	type|	Return a set containing the union of sets|
+|update()|	|=|	Update the set with the union of this set and others|
