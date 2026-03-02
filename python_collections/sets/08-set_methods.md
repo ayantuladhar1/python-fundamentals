@@ -20,4 +20,4 @@ Python has a set of built-in methods that you can use on sets.
 |symmetric_difference()| ^ | Returns a set with the symmetric differences of two sets|
 |symmetric_difference_update()|	^= | Inserts the symmetric differences from this set and another|
 |union()|	type|	Return a set containing the union of sets|
-|update()|	|=|	Update the set with the union of this set and others|
+|update()|	type=|	Update the set with the union of this set and others|
