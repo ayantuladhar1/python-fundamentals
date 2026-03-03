@@ -161,4 +161,14 @@ print(x) #after the change
 To determine if a specified key is present in a dictionary use the in keyword:
 
 ## Example:
-Check if ""
+Check if "model" is present in the dictionary:
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+```
+<img width="598" height="30" alt="image" src="https://github.com/user-attachments/assets/379da5c9-ce83-48cb-a893-c4ee76a570f6" />
