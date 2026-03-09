@@ -37,3 +37,44 @@ In this example, the program checks eacj condition in order. Since order is 75, 
 
 ## How Elif Works
 When you use elif, Python evauates the condtions from top to bottom. As soon as it finds a condition that is true, it executes that block and skips all the remaining conditions.
+
+Important: Only the first true condition will be executed. Even if multiple conditions are true, Python stops after the first matching block.
+
+## Example:
+Categorizing age groups:
+```python
+age = 25
+if age < 13:
+  print("You are a child")
+elif age < 20:
+  print("You are a teenager")
+elif age < 65:
+  print("You are an adult")
+elif age >= 65:
+  print("You are a senior")
+```
+<img width="156" height="31" alt="image" src="https://github.com/user-attachments/assets/18b03bc5-a916-40be-bd50-55cf67ad3a5b" />
+
+## When to Use Elif
+Use elif when you have multiple mutually esclusive conditions to check. This is more effiecient than using multiple separate if statements because Python stops checking once it finds a true condtion.
+
+## Example:
+Day of the week checker:
+```python
+day = 3
+if day == 1:
+  print("Monday")
+elif day == 2:
+  print("Tuesday")
+elif day == 3:
+  print("Wednesday")
+elif day == 4:
+  print("Thursday")
+elif day == 5:
+  print("Friday")
+elif day == 6:
+  print("Saturday")
+elif day == 7:
+  print("Sunday")
+```
+<img width="93" height="31" alt="image" src="https://github.com/user-attachments/assets/e138a798-069c-4db2-bca2-d2ba77178ecb" />
