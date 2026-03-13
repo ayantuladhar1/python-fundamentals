@@ -138,3 +138,58 @@ my_function("dog", name = "Buddy", age = 5)
 ```
 <img width="314" height="30" alt="image" src="https://github.com/user-attachments/assets/e869ff48-191c-411c-9252-8fa3a62a63e6" />
 
+## Passing Different Data Types
+You can send any data type as an argument to a function (string, number, list, dictionary), etc.
+The data type will be preserved inside the fucntion:
+
+## Example:
+Sending a list as an argument:
+```python
+def my_function(fruits):
+  for fruit in fruits:
+    print(fruit)
+my_fruits = ["apple", "banana", "cherry"]
+my_function(my_fruits)
+```
+<img width="69" height="77" alt="image" src="https://github.com/user-attachments/assets/7aa413a3-217d-45e2-b749-f88bb9e5e401" />
+
+## Example:
+Sending a dictionary as an argument:
+```python
+def my_function(person):
+  print("Name:", person["name"])
+  print("Age:", person["age"])
+my_person = {"name": "Emil", "age": 25}
+my_function(my_person)
+```
+<img width="105" height="51" alt="image" src="https://github.com/user-attachments/assets/5cc6399d-b022-40e0-a0d6-030e5cdcdf7c" />
+
+## Return Values
+Functions can return values using the return statement:
+
+## Example:
+```python
+def my_function(x, y):
+  return x + y
+result = my_function(5, 3)
+print(result)
+```
+<img width="18" height="29" alt="image" src="https://github.com/user-attachments/assets/7ab885b7-7819-4eb1-bb0d-ec6a01e2d6d3" />
+
+## Returning Different Data Types
+Functions can return any data type, including list, tuples,dictionaries, and more.
+
+## Example:
+A function that returns a list:
+```python
+def my_function():
+  return ["apple", "banana", "cherry"]
+
+fruits = my_function()
+print(fruits[0])
+print(fruits[1])
+print(fruits[2])
+```
+<img width="72" height="76" alt="image" src="https://github.com/user-attachments/assets/064f58b0-b076-428d-81f2-4340732533e0" />
+
+## Example:
