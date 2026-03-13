@@ -193,3 +193,90 @@ print(fruits[2])
 <img width="72" height="76" alt="image" src="https://github.com/user-attachments/assets/064f58b0-b076-428d-81f2-4340732533e0" />
 
 ## Example:
+A function that returns a tuple:
+```python
+def my_function():
+  return (10, 20)
+
+x, y = my_function()
+print("x:", x)
+print("y:", y)
+```
+<img width="57" height="55" alt="image" src="https://github.com/user-attachments/assets/bef18228-5e3f-4523-9719-b3b9b2f5eccf" />
+
+## Positional-Only Arguments
+You can specify that a function can have ONLY positional arguments.
+To sepcify positional-only arguments, add "/" afterthe arguments:
+
+## Example:
+```python
+def my_function(name, /):
+  print("Hello", name)
+my_function("Emil")
+```
+<img width="99" height="30" alt="image" src="https://github.com/user-attachments/assets/60bbff30-c70c-48c3-bf95-045964f58a9c" />
+
+Without the "/" you are actually allowed to use keyword arguments even if the function expects positional arguments:
+
+## Example:
+```python
+def my_function(name):
+  print("Hello", name)
+my_function(name = "Emil")
+```
+<img width="92" height="30" alt="image" src="https://github.com/user-attachments/assets/b0c8f6fb-99a1-4423-a7f6-6b2b8ea06b4d" />
+
+With "/" you will get an error if you try to use keyword arguments:
+
+## Example:
+```python
+def my_function(name, /):
+  print("Hello", name)
+#This will cause an error:
+my_function(name = "Emil")
+```
+<img width="677" height="75" alt="image" src="https://github.com/user-attachments/assets/7ca7632f-088b-46a4-9559-7eb9533eb469" />
+
+## Keyword-Only Arguments
+To specify that a function can have only keyword arguments, add "*" before the arguments:
+
+## Example:
+```python
+def my_function(*, name):
+  print("Hello", name)
+my_function(name = "Emil")
+```
+<img width="96" height="23" alt="image" src="https://github.com/user-attachments/assets/da96adac-55b0-42ea-b395-1c2cebddc3c4" />
+
+Without "*" you are allowed to use positional arguments even if the function expects keyword arguments:
+
+## Example:
+```python
+def my_function(name):
+  print("Hello", name)
+my_function("Emil")
+```
+<img width="92" height="26" alt="image" src="https://github.com/user-attachments/assets/3f2824c7-bd9b-4c9c-91ec-655685b8ce7d" />
+
+With "*" you will get an error if you try to use positional arguments:
+
+## Example:
+```python
+def my_function(*, name):
+  print("Hello", name)
+my_function("Emil")
+```
+<img width="624" height="81" alt="image" src="https://github.com/user-attachments/assets/a948d06d-1ffe-4f36-8916-c5922eeb9838" />
+
+## Combining Positional-Only and Keyword-Only
+You can combine both argument types in the same function.
+Arguments before "/" are positional-only and arguments after "*" are keyword only:
+
+## Example:
+```python
+def my_function(a, b, /, *, c, d):
+  return a + b + c + d
+result = my_function(5, 10, c = 15, d = 20)
+print(result)
+```
+<img width="31" height="23" alt="image" src="https://github.com/user-attachments/assets/c5e30b02-db6e-44d5-b92b-41a301ebe973" />
