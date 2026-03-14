@@ -118,4 +118,52 @@ His last name is Refsnes
 Arbitary Keyword Arguments are often shortened to **kwargs in Python documentation.
 
 ## What is **kwargs?
-The **kwargs 
+The **kwargs parameter allows a function to accept any numnber of keyword arguments.
+Inside the function, kwargs becomes a dictionary containing all the keyword arguments:
+
+## Example:
+Accessing values from **kwargs:
+```python
+def my_function(**myvar):
+  print("Type:", type(myvar))
+  print("Name:", myvar["name"])
+  print("Age:", myvar["age"])
+  print("All data:", myvar)
+
+my_function(name = "Tobias", age = 30, city = "Bergen")
+```
+
+## Output
+Type: <class 'dict'>
+Name: Tobias
+Age: 30
+All data: {'name': 'Tobias', 'age': 30, 'city': 'Bergen'}
+
+## Using **kwargs with Regular Arguments
+You can combine regular parameters with **kwargs.
+Regular parameters must come before **kwargs.
+
+## Example:
+```python
+def my_function(username, **details):
+  print("Username:", username)
+  print("Additional details:")
+  for key, value in details.items():
+    print("  ", key + ":", value)
+
+my_function("emil123", age = 25, city = "Oslo", hobby = "coding")
+```
+
+## Output
+Username: emil123
+Additional details:
+age: 25
+city: Oslo
+hobby: coding
+
+## Combining *args and **kwargs
+You can use both *args and **kwargs in the same function.
+The order must be:
+* Regular Paramters
+* *args
+* **kwargs
