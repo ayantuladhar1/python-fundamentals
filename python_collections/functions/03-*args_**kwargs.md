@@ -35,10 +35,10 @@ my_function("Emil", "Tobias", "Linus")
 ```
 
 ## Output
-Type: <class 'tuple'>
-First argument: Emil
-Second argument: Tobias
-All arguments: ('Emil', 'Tobias', 'Linus')
+Type: <class 'tuple'>  
+First argument: Emil  
+Second argument: Tobias  
+All arguments: ('Emil', 'Tobias', 'Linus')  
 
 ## Using *args with Regular Arguments
 You can combine regular parameters with *args.
@@ -53,9 +53,9 @@ my_function("Hello", "Emil", "Tobias", "Linus")
 ```
 
 ## Output
-Hello Emil
-Hello Tobias
-Hello Linus
+Hello Emil  
+Hello Tobias  
+Hello Linus  
 
 In this example, "Hello" is assigned to greeting, and the rest are collected in names.
 
@@ -77,9 +77,9 @@ print(my_function(5))
 ```
 
 ## Output
-6
-100
-5
+6  
+100  
+5  
 
 ## Example:
 Fincing the maximum value:
@@ -97,7 +97,7 @@ print(my_function(3, 7, 2, 9, 1))
 ```
 
 ## Output
-9
+9  
 
 ## Arbitary Keyword Arguments - **kwargs
 If you do not know how many keyword arguments will be passeed into your function, add two asterisks ** before the parameter name.
@@ -134,10 +134,10 @@ my_function(name = "Tobias", age = 30, city = "Bergen")
 ```
 
 ## Output
-Type: <class 'dict'>
-Name: Tobias
-Age: 30
-All data: {'name': 'Tobias', 'age': 30, 'city': 'Bergen'}
+Type: <class 'dict'>  
+Name: Tobias  
+Age: 30  
+All data: {'name': 'Tobias', 'age': 30, 'city': 'Bergen'}  
 
 ## Using **kwargs with Regular Arguments
 You can combine regular parameters with **kwargs.
@@ -155,11 +155,11 @@ my_function("emil123", age = 25, city = "Oslo", hobby = "coding")
 ```
 
 ## Output
-Username: emil123
-Additional details:
-age: 25
-city: Oslo
-hobby: coding
+Username: emil123  
+Additional details:  
+age: 25  
+city: Oslo  
+hobby: coding  
 
 ## Combining *args and **kwargs
 You can use both *args and **kwargs in the same function.
@@ -180,9 +180,9 @@ my_function("User Info", "Emil", "Tobias", age = 25, city = "Oslo")
 
 ## Output
 
-Title: User Info
-Positional arguments: ('Emil', 'Tobias')
-Keyword arguments: {'age': 25, 'city': 'Oslo'}
+Title: User Info  
+Positional arguments: ('Emil', 'Tobias')  
+Keyword arguments: {'age': 25, 'city': 'Oslo'}  
 
 ## Unpacking Arguments
 The * and ** operators can also be used when calling functions to unpack(expand) a list or dictionary into separate arguments.
