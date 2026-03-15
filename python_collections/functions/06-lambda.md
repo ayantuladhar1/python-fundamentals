@@ -89,8 +89,8 @@ print(mytripler(11))
 ```
 
 ## Output
-22
-33
+22  
+33  
 
 Use lambda function when an anonymous function is required for a short period of time.
 
