@@ -16,12 +16,12 @@ countdown(5)
 ```
 
 ## Output
-5
-4
-3
-2
-1
-Done!
+5  
+4  
+3  
+2  
+1  
+Done!  
 
 ## Base Case and Recursive Case
 Every recursive function must have two parts:
@@ -45,7 +45,7 @@ print(factorial(5))
 ```
 
 ## Output
-120
+120  
 
 The base case is crucial. Always make sure your recursive function has a condition that will eventually be met.
 
@@ -68,7 +68,7 @@ print(fibonacci(7))
 ```
 
 ## Output
-13
+13  
 
 ## Recursion with Lists
 Recursion can be used to process lists by handling one element at a time:
@@ -87,7 +87,7 @@ print(sum_list(my_list))
 ```
 
 ## Output
-15
+15  
 
 ## Example:
 Find the maximum value in a list:
@@ -104,7 +104,7 @@ print(find_max(my_list))
 ```
 
 ## Output
-9
+9  
 
 ## Recursion Depth Limit
 Python has a limit on how deep recusion can go. The default limit is usually around 1000 recursive calls.
@@ -117,7 +117,7 @@ print(sys.getrecursionlimit())
 ```
 
 ## Output
-1000
+1000  
 
 If you need deeper recurion, you can increase the limit, but be careful as this can cause crashes:
 ## Example:
