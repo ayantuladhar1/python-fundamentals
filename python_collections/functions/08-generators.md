@@ -16,9 +16,9 @@ for value in my_generator():
 ```
 
 ## Output
-1
-2
-3
+1  
+2  
+3  
 
 Generators allow you to iterate over data without storing the entire dataset in memory.
 Instead of using return, generators use the yield keyword.
@@ -41,11 +41,11 @@ for num in count_up_to(5):
 ```
 
 ## Output
-1
-2
-3
-4
-5
+1  
+2  
+3  
+4  
+5  
 
 Unlike return, which terminates the function, yield pauses it and can be called multiple times.
 
@@ -68,9 +68,9 @@ print(next(gen))
 ```
 
 ## Output
-0
-1
-2
+0  
+1  
+2  
 
 ## Using next() with Generators
 You can manually iterate through a generator using the next() function:
@@ -89,9 +89,9 @@ print(next(gen))
 ```
 
 ## Output
-Emil
-Tobias
-Linus
+Emil  
+Tobias  
+Linus  
 
 When there are no more values to yield the generator raises a StopIteration execption:
 
@@ -108,11 +108,11 @@ print(next(gen))  # This will raise StopIteration
 ```
 
 ## Output
-1
-2
-Traceback (most recent call last):
-  File "./prog.py", line 8, in <module>
-StopIteration
+1  
+2  
+Traceback (most recent call last):  
+  File "./prog.py", line 8, in <module>  
+StopIteration  
 
 ## Generator Expressions
 Similar to list comprehensions, you can create generators using generator expressions with parantheses instead of square brackets:
@@ -289,8 +289,8 @@ gen.send("World")
 ```
 
 ## Output
-Received: Hello
-Received: World
+Received: Hello  
+Received: World  
 
 ## close() Method
 The close() methods stops the generator:
@@ -311,5 +311,5 @@ gen.close()
 ```
 
 ## Output
-1
-Generator closed
+1  
+Generator closed  
