@@ -167,3 +167,57 @@ The order must be:
 * Regular Paramters
 * *args
 * **kwargs
+
+## Example:
+```python
+def my_function(title, *args, **kwargs):
+  print("Title:", title)
+  print("Positional arguments:", args)
+  print("Keyword arguments:", kwargs)
+
+my_function("User Info", "Emil", "Tobias", age = 25, city = "Oslo")
+```
+
+## Output
+
+Title: User Info
+Positional arguments: ('Emil', 'Tobias')
+Keyword arguments: {'age': 25, 'city': 'Oslo'}
+
+## Unpacking Arguments
+The * and ** operators can also be used when calling functions to unpack(expand) a list or dictionary into separate arguments.
+
+## Unpacking List with *
+If you have values stores in a list, you can use * to unpack them into individual arguments:
+
+## Example:
+Using * to unpack a list into arguments:
+```python
+def my_function(a, b, c):
+  return a + b + c
+
+numbers = [1, 2, 3]
+result = my_function(*numbers)
+print(result)
+```
+
+## Output
+6
+
+## Unpacking Dictionaries with **
+If you have keyword arguments stored in a dictionary, you can use ** to unpack them:
+
+## Example;
+Using ** to unpack a dictionary into keyword arguments:
+```python
+def my_function(fname, lname):
+  print("Hello", fname, lname)
+
+person = {"fname": "Emil", "lname": "Refsnes"}
+my_function(**person)
+```
+
+## Output
+Hello Emil Refsnes
+
+Remember: Use * and ** in function definitions to collect arguments, and use them in function calls to unpack arguments.
