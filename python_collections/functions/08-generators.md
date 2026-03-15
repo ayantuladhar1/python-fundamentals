@@ -269,4 +269,47 @@ for _ in range(100):
 135301852344706746049
 218922995834555169026
 
+## Generator Methods
+Generators have special methods for advanced control:
 
+## send() Method
+The send() method allows you to send a value to the generator:
+
+## Example:
+```python
+def echo_generator():
+  while True:
+    received = yield
+    print("Received:", received)
+
+gen = echo_generator()
+next(gen)  # Prime the generator
+gen.send("Hello")
+gen.send("World")
+```
+
+## Output
+Received: Hello
+Received: World
+
+## close() Method
+The close() methods stops the generator:
+
+## Example:
+```python
+def my_gen():
+  try:
+    yield 1
+    yield 2
+    yield 3
+  finally:
+    print("Generator closed")
+
+gen = my_gen()
+print(next(gen))
+gen.close()
+```
+
+## Output
+1
+Generator closed
