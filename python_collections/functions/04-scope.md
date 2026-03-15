@@ -49,8 +49,8 @@ print(x)
 ```
 
 ## Output
-300
-300
+300  
+300  
 
 ## Naming Variables
 If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables, one available in the global scope (outside the function) and one available in the local scope (inside the function):
@@ -67,8 +67,8 @@ print(x)
 ```
 
 ## Output
-200
-300
+200  
+300  
 
 ## Global Keyword
 If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
@@ -146,6 +146,6 @@ print("Global:", x)
 ```
 
 ## Output
-Inner: local
-Outer: enclosing
-Global: global
+Inner: local  
+Outer: enclosing  
+Global: global  
