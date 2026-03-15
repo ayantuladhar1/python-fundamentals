@@ -50,8 +50,8 @@ print(otherfunction())
 ```
 
 ## Output
-HELLO SALLY
-I AM SPEED!
+HELLO SALLY  
+I AM SPEED!  
 
 ## Arguments in the Decorated Function
 Function that requires arguments can also be decorated, just make sure you pass the arguments to the wrapper function:
