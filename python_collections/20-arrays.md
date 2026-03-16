@@ -102,3 +102,53 @@ print(cars)
 ['Ford', 'Volvo', 'BMW', 'Honda']
 ```
 
+## Removing Array Elements
+You can use thee pop() method to remove an element from the array.
+
+## Example:
+Delete the second element of the cars array:
+```python
+cars = ["Ford", "Volvo", "BMW"]
+cars.pop(1)
+print(cars)
+```
+
+## Output
+```list
+['Ford', 'BMW']
+```
+
+You can also use the remove() method to remove an element from the array.
+
+## Example:
+Delete the element that has the value "Volvo":
+```python
+cars = ["Ford", "Volvo", "BMW"]
+cars.remove("Volvo")
+print(cars)
+```
+
+## Output
+```list
+['Ford', 'BMW']
+```
+
+Note: The list's remove() method only removes the first occurrence of the specified value.
+
+## Array Methods
+Python has a set of built-in methods that you can use on list/arrays.
+|Method| Description|
+|------|------------|
+|append()| Adds an element at the end of the list|
+|clear()| Removes all the elements from the list|
+|copy()| Returns a copy of the list|
+|count()| Returns the number of elements with the specified value|
+|extend()| Add the elements of a list (or any iterable), to the end of the current list|
+|index()| Returns the index of the first element with the specified value|
+|insert()| Adds an element at the specified position|
+|pop()| Removes the element at the specified position|
+|remove()| Removes the first item with the specified value|
+|reverse()| Reverses the order of the list|
+|sort()| Sorts the list|
+
+Note: Python does not have built-in support for Arrays, but Python Lists can be used instead.
