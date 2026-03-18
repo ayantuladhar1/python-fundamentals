@@ -177,6 +177,7 @@ You can add flags to the pattern when using regular expressions.
 |re.UNICODE|	re.U|	Returns Unicode matches. This is default from Python 3. For Python 2: use this flag to return only Unicode matches|
 |re.VERBOSE|	re.X|	Allows whitespaces and comments inside patterns. Makes the pattern more readable|
 
+## Example:
 re.ASCII, re.A = Returns only ASCII matches
 ```python
 import re
@@ -286,3 +287,72 @@ A special sequence is a \ followed by one of the characters in the list below, a
 |\w|	Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)| "\w"|	
 |\W|	Returns a match where the string DOES NOT contain any word characters|	"\W"|	
 |\Z|	Returns a match if the specified characters are at the end of the string|	"Spain\Z"|
+
+## Example
+\A = Returns a match if the specified characters are at the beginning of the string	eg."\AThe"
+```python
+import re
+txt = "The rain in Spain"
+#Check if the string starts with "The":
+x = re.findall("\AThe", txt)
+print(x)
+if x:
+  print("Yes, there is a match!")
+else:
+  print("No match")
+```
+<img width="208" height="58" alt="image" src="https://github.com/user-attachments/assets/68fdb4c4-09ec-4a99-8265-4e6eec205214" />
+
+\b	= Returns a match where the specified characters are at the beginning or at the end of a word (the "r" in the beginning is making sure that the string is being treated as a "raw string"), eg.	r"\bain" and r"ain\b"
+```python
+import re
+txt = "The rain in Spain"
+#Check if "ain" is present at the beginning of a WORD:
+x = re.findall(r"\bain", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="77" height="55" alt="image" src="https://github.com/user-attachments/assets/b8bc7d73-f654-4dde-8496-a20ad0e17b1d" />
+
+```python
+import re
+txt = "The rain in Spain"
+#Check if "ain" is present at the end of a WORD:
+x = re.findall(r"ain\b", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="293" height="57" alt="image" src="https://github.com/user-attachments/assets/5e37ee3c-f4a4-47fc-86f2-09a8f9461531" />
+
+\B = Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word (the "r" in the beginning is making sure that the string is being treated as a "raw string"), eg.	r"\Bain" r"ain\B"
+```python
+import re
+txt = "The rain in Spain"
+#Check if "ain" is present, but NOT at the beginning of a word:
+x = re.findall(r"\Bain", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="302" height="61" alt="image" src="https://github.com/user-attachments/assets/f870233c-f442-433b-89b3-e32bc31f5ffb" />
+
+```python
+import re
+txt = "The rain in Spain"
+#Check if "ain" is present, but NOT at the end of a word:
+x = re.findall(r"ain\B", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="78" height="49" alt="image" src="https://github.com/user-attachments/assets/81ffc67e-7923-4d06-ac37-aeaba4190711" />
