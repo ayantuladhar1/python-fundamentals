@@ -356,3 +356,102 @@ else:
   print("No match")
 ```
 <img width="78" height="49" alt="image" src="https://github.com/user-attachments/assets/81ffc67e-7923-4d06-ac37-aeaba4190711" />
+
+\d = Returns a match where the string contains digits (numbers from 0-9), eg. "\d"
+```python
+import re
+txt = "The rain in Spain"
+#Check if the string contains any digits (numbers from 0-9):
+x = re.findall("\d", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="79" height="48" alt="image" src="https://github.com/user-attachments/assets/f3349db0-c72e-403d-a97f-bfbcec0ea9fd" />
+
+\D = Returns a match where the string DOES NOT contain digits, eg. "\D"
+```python
+import re
+txt = "The rain in Spain"
+#Return a match at every no-digit character:
+x = re.findall("\D", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="750" height="52" alt="image" src="https://github.com/user-attachments/assets/26a97938-7c26-4e2c-88ea-c2081fda3a14" />
+
+\s = Returns a match where the string contains a white space character, eg.	"\s"\
+```python
+import re
+txt = "The rain in Spain"
+#Return a match at every white-space character:
+x = re.findall("\s", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="302" height="58" alt="image" src="https://github.com/user-attachments/assets/5e29ef64-4cce-4279-a077-286b167f9ab4" />
+
+\S = Returns a match where the string DOES NOT contain a white space character, eg. "\S"
+```python
+import re
+txt = "The rain in Spain"
+#Return a match at every NON white-space character:
+x = re.findall("\S", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="630" height="59" alt="image" src="https://github.com/user-attachments/assets/4adf620e-f123-4a93-8e39-8a5896db226e" />
+
+\w = Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character), eg. "\w"
+```python
+import re
+txt = "The rain in Spain"
+#Return a match at every word character (characters from a to Z, digits from 0-9, and the underscore _ character):
+x = re.findall("\w", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="626" height="56" alt="image" src="https://github.com/user-attachments/assets/a19ba386-316f-47c6-b6c1-79479722f3f8" />
+
+\W = Returns a match where the string DOES NOT contain any word characters, eg. "\W"
+```python
+import re
+txt = "The rain in Spain"
+#Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
+x = re.findall("\W", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="302" height="63" alt="image" src="https://github.com/user-attachments/assets/c087fe2c-78a5-45c6-96c4-0a3876454ce3" />
+
+\Z = Returns a match if the specified characters are at the end of the string, eg. "Spain\Z"
+```python
+import re
+txt = "The rain in Spain"
+#Check if the string ends with "Spain":
+x = re.findall("Spain\Z", txt)
+print(x)
+if x:
+  print("Yes, there is a match!")
+else:
+  print("No match")
+```
+<img width="201" height="60" alt="image" src="https://github.com/user-attachments/assets/63ebae13-d6c3-49d0-a458-28059f96d999" />
+
