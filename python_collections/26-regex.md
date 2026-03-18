@@ -466,4 +466,118 @@ A set is a set of characters inside a pair of square brackets [] with a special 
 |[0-9]|	Returns a match for any digit between 0 and 9|	
 |[0-5][0-9]|	Returns a match for any two-digit numbers from 00 and 59|
 |[a-zA-Z]|	Returns a match for any character alphabetically between a and z, lower case OR upper case|
-|[+]|	In sets, +, *, ., |, (), $,{} has no special meaning, so [+] means: return a match for any + character in the string|
+|[+]|	In sets, +, *, ., type, (), $,{} has no special meaning, so [+] means: return a match for any + character in the string|
+
+## Example:
+[arn]	= Returns a match where one of the specified characters (a, r, or n) is present
+```python
+import re
+txt = "The rain in Spain"
+#Check if the string has any a, r, or n characters:
+x = re.findall("[arn]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="300" height="56" alt="image" src="https://github.com/user-attachments/assets/54e4f22a-a7d5-496c-86c8-44daed8a4f2d" />
+
+[a-n] =	Returns a match for any lower case character, alphabetically between a and n
+```python
+import re
+txt = "The rain in Spain"
+#Check if the string has any characters between a and n:
+x = re.findall("[a-n]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="453" height="56" alt="image" src="https://github.com/user-attachments/assets/2952fa7e-cc78-4900-9e66-c915c3b62cb6" />
+
+[^arn] =	Returns a match for any character EXCEPT a, r, and n
+```python
+import re
+txt = "The rain in Spain"
+#Check if the string has other characters than a, r, or n:
+x = re.findall("[^arn]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="499" height="60" alt="image" src="https://github.com/user-attachments/assets/0b6d51ba-7962-468a-929c-07b234b5faa5" />
+
+[0123] = Returns a match where any of the specified digits (0, 1, 2, or 3) are present
+```python
+import re
+txt = "The rain in Spain"
+#Check if the string has any 0, 1, 2, or 3 digits:
+x = re.findall("[0123]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="73" height="53" alt="image" src="https://github.com/user-attachments/assets/37784c16-44d6-4c42-8daf-d64736158027" />
+
+[0-9] =	Returns a match for any digit between 0 and 9
+```python
+import re
+txt = "8 times before 11:45 AM"
+#Check if the string has any digits:
+x = re.findall("[0-9]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="296" height="48" alt="image" src="https://github.com/user-attachments/assets/d9fbfb1a-8b58-48fa-b2bc-1051490eec93" />
+
+[0-5][0-9] = Returns a match for any two-digit numbers from 00 and 59
+```python
+import re
+txt = "8 times before 11:45 AM"
+#Check if the string has any two-digit numbers, from 00 to 59:
+x = re.findall("[0-5][0-9]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="295" height="59" alt="image" src="https://github.com/user-attachments/assets/f95286f6-5d69-438c-8f2f-c7ff478d1e76" />
+
+[a-zA-Z]	Returns a match for any character alphabetically between a and z, lower case OR upper case
+```python
+import re
+txt = "8 times before 11:45 AM"
+#Check if the string has any characters from a to z lower case, and A to Z upper case:
+x = re.findall("[a-zA-Z]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="583" height="55" alt="image" src="https://github.com/user-attachments/assets/e56a7cb4-35b9-4cff-9df0-7b01bd569239" />
+
+[+] = In sets, +, *, ., type, (), $,{} has no special meaning, so [+] means: return a match for any + character in the string
+```python
+import re
+txt = "8 times before 11:45 AM"
+#Check if the string has any + characters:
+x = re.findall("[+]", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="83" height="52" alt="image" src="https://github.com/user-attachments/assets/a7f89d49-a8c7-49da-a45d-a201aa3f8c5e" />
+
