@@ -581,3 +581,172 @@ else:
 ```
 <img width="83" height="52" alt="image" src="https://github.com/user-attachments/assets/a7f89d49-a8c7-49da-a45d-a201aa3f8c5e" />
 
+## The findall() Function
+The findall() function returns a list containing all matches.
+
+## Example:
+Print a list of all matches:
+```python
+import re
+#Return a list containing every occurrence of "ai":
+txt = "The rain in Spain"
+x = re.findall("ai", txt)
+print(x)
+```
+<img width="114" height="37" alt="image" src="https://github.com/user-attachments/assets/a725abd6-a023-4a98-bfa6-598809e48e07" />
+
+The list contains the matches in the order they are found.
+If no mataches are found, an empty list is returned:
+
+## Example:
+Return an empty list if no match was found:
+```python
+import re
+txt = "The rain in Spain"
+#Check if "Portugal" is in the string:
+x = re.findall("Portugal", txt)
+print(x)
+if (x):
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+<img width="81" height="52" alt="image" src="https://github.com/user-attachments/assets/423c1f83-aa96-4dbe-9c72-dd1b835185a8" />
+
+## The search() Function
+The search() function searches the string for a match, and returns a Match object if there is a match.
+If there is more than one match, only the first occurrence of the match will be returned:
+
+## Example:
+Search for the first white-space character in the string:
+```python
+import re
+txt = "The rain in Spain"
+x = re.search("\s", txt)
+print("The first white-space character is located in position:", x.start()) 
+```
+<img width="514" height="35" alt="image" src="https://github.com/user-attachments/assets/7ab5a002-d0d5-4628-961e-effa8dad41d7" />
+
+If no matches are found, the value None is returned:
+
+## Example:
+Make a search that returns no match:
+```python
+import re
+txt = "The rain in Spain"
+x = re.search("Portugal", txt)
+print(x)
+```
+<img width="40" height="29" alt="image" src="https://github.com/user-attachments/assets/f13bba5e-e951-4355-a45b-62f68b4ba834" />
+
+## The split() Function
+The split() function returns a list where te string has been split at each match:
+
+## Example:
+Split at each white-space character:
+```python
+import re
+#Split the string at every white-space character:
+txt = "The rain in Spain"
+x = re.split("\s", txt)
+print(x)
+```
+<img width="263" height="36" alt="image" src="https://github.com/user-attachments/assets/ba80a41d-324a-416a-b412-b90feef9be8d" />
+
+You can control the number of occurrences by specifying the maxsplit parameter:
+
+## Example: 
+Split the string only at first occurence:
+```python
+import re
+#Split the string at the first white-space character:
+txt = "The rain in Spain"
+x = re.split("\s", txt, 1)
+print(x)
+```
+<img width="221" height="32" alt="image" src="https://github.com/user-attachments/assets/af632fe3-993f-4d23-9aa5-c3717efb0be4" />
+
+## The sub() Function
+The sub() function replaces the matches with the text of your choice:
+
+## Example:
+Replace every white-space character with the number 9:
+```python
+import re
+#Replace all white-space characters with the digit "9":
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+print(x)
+```
+<img width="169" height="28" alt="image" src="https://github.com/user-attachments/assets/a5391e04-f3cb-45d3-b65b-b3a13a10749b" />
+
+You can control the number of replacements by specifying the count parameter:
+
+## Example:
+Replace the first 2 occurrences:
+```python
+import re
+#Replace the first two occurrences of a white-space character with the digit 9:
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt, 2)
+print(x)
+```
+<img width="163" height="32" alt="image" src="https://github.com/user-attachments/assets/a4355517-5944-4b5b-8433-ed07a37930e7" />
+
+## Match Object
+A Match Object is an object containing information about the search and the result.
+
+Note: If there is no match, the value None will be returned, instead of the Match object.
+
+## Example:
+Do a search that will return a Match Object:
+```python
+import re
+#The search() function returns a Match object:
+txt = "The rain in Spain"
+x = re.search("ai", txt)
+print(x)
+```
+<img width="431" height="28" alt="image" src="https://github.com/user-attachments/assets/689e1a45-8e13-4b97-8a08-4c3cb839eb0e" />
+
+The Match object has properties and methods used to retrieve information about the search, and the result:
+.span() = returns a tuple containing the start, and end positions of the match.
+.string() = returns the string passed into the function
+.group() = returns the part of the string where there was a match
+
+## Example:
+Print the position (start - and - end position) of the first match occurence.
+The regular expression looks for any words that starts with an upper case "S":
+```python
+import re
+#Search for an upper case "S" character in the beginning of a word, and print its position:
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.span())
+```
+<img width="75" height="25" alt="image" src="https://github.com/user-attachments/assets/4c4010ee-4eae-43fb-95d4-1a80fb1fbf45" />
+
+## Example:
+Print the string passed into the function:
+```python
+import re
+#Search for an upper case "S" character in the beginning of a word, and print the word:
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.group())
+```
+<img width="55" height="29" alt="image" src="https://github.com/user-attachments/assets/dc71f1fd-b4f5-46d7-a1ee-4f248096dc70" />
+
+## Example
+Print the part of the string where there was a match.
+The regular expression lokks for any words that starts with an upper case "S":
+```python
+import re
+#Search for an upper case "S" character in the beginning of a word, and print the word:
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.group())
+```
+<img width="53" height="31" alt="image" src="https://github.com/user-attachments/assets/b950db54-ea44-434c-b794-1235996cea8e" />
+
+Note: If there is no match, the value None will be returned, instead of the Match Object.
