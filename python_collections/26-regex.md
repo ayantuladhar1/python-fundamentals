@@ -739,7 +739,7 @@ print(x.group())
 
 ## Example
 Print the part of the string where there was a match.
-The regular expression lokks for any words that starts with an upper case "S":
+The regular expression looks for any words that starts with an upper case "S":
 ```python
 import re
 #Search for an upper case "S" character in the beginning of a word, and print the word:
