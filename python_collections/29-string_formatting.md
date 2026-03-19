@@ -112,6 +112,7 @@ print(txt)
 
 Here is a list of all the formatting types.
 |Formatting Types|
+|----------------|
 |:<	Left aligns the result (within the available space)|
 |:>	Right aligns the result (within the available space)|
 |:^	Center aligns the result (within the available space)|
