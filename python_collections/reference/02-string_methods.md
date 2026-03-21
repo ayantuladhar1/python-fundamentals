@@ -3,7 +3,7 @@ Python has a set of buil-in methods that you can use on strings.
 
 Note: All string methods returns new values. They do not change original string.
 
-|Methpd| Description|
+|Method| Description|
 |------|------------|
 |capitalize()|	Converts the first character to upper case|
 |casefold()|	Converts string into lower case|
@@ -50,3 +50,5 @@ Note: All string methods returns new values. They do not change original string.
 |translate()|	Returns a translated string|
 |upper()|	Converts a string into upper case|
 |zfill()|	Fills the string with a specified number of 0 values at the beginning|
+
+Note: All string methods returns new values. They do not change the original string.
